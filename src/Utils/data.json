@@ -1,0 +1,738 @@
+[
+    {
+        "name": "Long skirt for men \"Iwami\"",
+        "category": "bottoms",
+        "subcategory": "skirts",
+        "description": "Long skirt for men ’Iwami’ - TECHWEAR STORM™",
+        "price": 89.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/long-skirt-for-men-iwami-l-techwear-storm-209.jpg?v=1719497563&width=700",
+            "https://techwearstorm.com/cdn/shop/files/long-skirt-for-men-iwami-techwear-storm-209.webp?v=1719495704&width=700"
+        ],
+        "tags": ["asymmetric", "layered", "streetwear"],
+        "materials": ["Cotton (70%)", "Polyester (30%)"],
+        "releaseDate": "2023-06-10"
+    },
+    {
+        "name": "\"Kotetsu\" Hoodie with horns",
+        "category": "tops",
+        "subcategory": "hoodies",
+        "description": "\"Kotetsu\" Hoodie",
+        "price": 119.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/kotetsu-hoodie-with-horns-black-m-techwear-storm-203.webp?v=1704441480&width=700",
+            "https://techwearstorm.com/cdn/shop/files/kotetsu-hoodie-with-horns-gray-m-techwear-storm-263.webp?v=1704441485&width=800"
+        ],
+        "tags": ["detachable horns", "oversized", "gothic"],
+        "materials": ["Heavyweight cotton (80%)", "Polyester (20%)"],
+        "releaseDate": "2023-01-05"
+    },
+    {
+        "name": "Punk pants \"Mizawa\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Punk pants ’Mizawa’ - TECHWEAR STORM™",
+        "price": 129.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/punk-pants-mizawa-s-techwear-storm-326.jpg?v=1719466849&width=700",
+            "https://techwearstorm.com/cdn/shop/files/punk-pants-mizawa-techwear-storm-714.jpg?v=1719466853&width=700"
+        ],
+        "tags": ["studded", "zipper details", "tapered fit"],
+        "materials": ["Cotton (65%)", "PU Leather (35%)"],
+        "releaseDate": "2023-06-25"
+    },
+    {
+        "name": "Darkwear Long Shirt \"Komura\"",
+        "category": "tops",
+        "subcategory": "shirts",
+        "description": "Darkwear Long Shirt ’Komura’ - TECHWEAR STORM™",
+        "price": 79.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/darkwear-long-shirt-komura-techwear-storm-603.webp?v=1715202514&width=700",
+            "https://techwearstorm.com/cdn/shop/files/darkwear-long-shirt-komura-black-s-techwear-storm-511.webp?v=1715203479&width=700"
+        ],
+        "tags": ["oversized", "drop shoulder", "minimalist"],
+        "materials": ["Linen (100%)"],
+        "releaseDate": "2023-05-12"
+    },
+    {
+        "name": "Punk harem pants \"Yubari\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Punk harem pants ’Yubari’ - TECHWEAR STORM™",
+        "price": 109.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/punk-harem-pants-yubari-s-m-techwear-storm-241.jpg?v=1719391249&width=700",
+            "https://techwearstorm.com/cdn/shop/files/punk-harem-pants-yubari-techwear-storm-831.webp?v=1719391252&width=700"
+        ],
+        "tags": ["drop crotch", "cargo pockets", "elastic waist"],
+        "materials": ["Cotton (60%)", "Polyester (40%)"],
+        "releaseDate": "2023-06-20"
+    },
+    {
+        "name": "Hakama Style Pants \"Isaha\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Pants ’Isaha’ - TECHWEAR STORM™",
+        "price": 139.99,
+        "stock": 8,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/hakama-style-pants-isaha-m-techwear-storm-254.webp?v=1716395786&width=700",
+            "https://techwearstorm.com/cdn/shop/files/hakama-style-pants-isaha-techwear-storm-111.webp?v=1716395790&width=700"
+        ],
+        "tags": ["wide leg", "traditional", "modern twist"],
+        "materials": ["Cotton (100%)"],
+        "releaseDate": "2023-05-22"
+    },
+    {
+        "name": "Darkwear Trench Coat \"Kanoke\"",
+        "category": "outerwear",
+        "subcategory": "coats",
+        "description": "Darkwear Trench Coat ’Kanoke’ - TECHWEAR STORM™",
+        "price": 199.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/darkwear-trench-coat-kanoke-techwear-storm-328.webp?v=1715191988&width=700",
+            "https://techwearstorm.com/cdn/shop/files/darkwear-trench-coat-kanoke-techwear-storm-828.webp?v=1715196377&width=700"
+        ],
+        "tags": ["longline", "belted", "water-resistant"],
+        "materials": ["Poly-cotton blend (70/30)"],
+        "releaseDate": "2023-05-10"
+    },
+    {
+        "name": "Skirt for men \"Abashiri\"",
+        "category": "bottoms",
+        "subcategory": "skirts",
+        "description": "Skirt for men ’Abashiri’ - TECHWEAR STORM™",
+        "price": 79.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/skirt-for-men-abashiri-techwear-storm-558.jpg?v=1719499526&width=700",
+            "https://techwearstorm.com/cdn/shop/files/skirt-for-men-abashiri-s-techwear-storm-476.jpg?v=1719501403&width=700"
+        ],
+        "tags": ["pleated", "midi length", "androgynous"],
+        "materials": ["Polyester (100%)"],
+        "releaseDate": "2023-06-28"
+    },
+    {
+        "name": "Darkwear Trench Coat \"Ashiya\"",
+        "category": "outerwear",
+        "subcategory": "coats",
+        "description": "Darkwear Trench Coat ’Ashiya’ - TECHWEAR STORM™",
+        "price": 219.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/darkwear-trench-coat-ashiya-m-techwear-storm-983.webp?v=1715203954&width=700",
+            "https://techwearstorm.com/cdn/shop/files/darkwear-trench-coat-ashiya-techwear-storm-921.webp?v=1715203958&width=700"
+        ],
+        "tags": ["double-breasted", "storm flap", "removable liner"],
+        "materials": ["Wool blend (80% wool, 20% nylon)"],
+        "releaseDate": "2023-05-15"
+    },
+    {
+        "name": "Cyberpunk leather pants \"Rumo\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Cyberpunk leather pants ’Rumo’ - TECHWEAR STORM™",
+        "price": 179.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-leather-pants-rumo-s-techwear-storm-911.jpg?v=1719602977&width=700",
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-leather-pants-rumo-techwear-storm-101.webp?v=1719602980&width=700"
+        ],
+        "tags": ["faux leather", "high shine", "slim fit"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-06-27"
+    },
+    {
+        "name": "Darkwear Cloak \"Sennan\"",
+        "category": "outerwear",
+        "subcategory": "capes",
+        "description": "Darkwear Cloak ’Sennan’ - TECHWEAR STORM™",
+        "price": 159.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/darkwear-cloak-sennan-m-techwear-storm-561.webp?v=1715285297&width=700",
+            "https://techwearstorm.com/cdn/shop/files/darkwear-cloak-sennan-techwear-storm-467.webp?v=1715283879&width=700"
+        ],
+        "tags": ["hooded", "asymmetrical", "draped"],
+        "materials": ["Polyester (100%)"],
+        "releaseDate": "2023-05-08"
+    },
+    {
+        "name": "Harem pants men black \"Tomako\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Harem pants men black ’Tomako’ - TECHWEAR STORM™",
+        "price": 99.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/harem-pants-men-black-tomako-s-techwear-storm-543.jpg?v=1719606292&width=700",
+            "https://techwearstorm.com/cdn/shop/files/harem-pants-men-black-tomako-techwear-storm-792.jpg?v=1719605319&width=700"
+        ],
+        "tags": ["drop crotch", "elastic cuffs", "casual"],
+        "materials": ["Cotton (70%)", "Polyester (30%)"],
+        "releaseDate": "2023-06-27"
+    },
+    {
+        "name": "\"Kensei\" Noragi Techwear",
+        "category": "outerwear",
+        "subcategory": "jackets",
+        "description": "’Kensei’ Noragi Techwear - TECHWEAR STORM™",
+        "price": 149.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/kensei-noragi-techwear-storm-666.webp?v=1724837404&width=700",
+            "https://techwearstorm.com/cdn/shop/files/kensei-noragi-techwear-storm-105.webp?v=1724837408&width=700"
+        ],
+        "tags": ["kimono style", "open front", "adjustable straps"],
+        "materials": ["Linen (50%)", "Cotton (50%)"],
+        "releaseDate": "2023-08-27"
+    },
+    {
+        "name": "Hakama Cargo Pants \"Katazu\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Cargo Pants ’Katazu’ - TECHWEAR STORM™",
+        "price": 129.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/hakama-cargo-pants-katazu-m-techwear-storm-772.webp?v=1715689241&width=700",
+            "https://techwearstorm.com/cdn/shop/files/hakama-cargo-pants-katazu-techwear-storm-421.webp?v=1715687792&width=700"
+        ],
+        "tags": ["utility", "multiple pockets", "convertible"],
+        "materials": ["Cotton (65%)", "Polyester (35%)"],
+        "releaseDate": "2023-05-14"
+    },
+    {
+        "name": "Fashion Cloak \"Nihama\"",
+        "category": "outerwear",
+        "subcategory": "capes",
+        "description": "Fashion Cloak ’Nihama’ - TECHWEAR STORM™",
+        "price": 139.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/fashion-cloak-nihama-techwear-storm-131.jpg?v=1716748838&width=700",
+            "https://techwearstorm.com/cdn/shop/files/fashion-cloak-nihama-techwear-storm-131.jpg?v=1716748838&width=700"
+        ],
+        "tags": ["lightweight", "versatile", "dramatic silhouette"],
+        "materials": ["Polyester (100%)"],
+        "releaseDate": "2023-05-25"
+    },
+    {
+        "name": "Cyberpunk trousers \"Wakkanai\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Cyberpunk trousers ’Wakkanai’ - TECHWEAR STORM™",
+        "price": 119.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-trousers-wakkanai-s-techwear-storm-384.jpg?v=1719614960&width=700",
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-trousers-wakkanai-techwear-storm-198.webp?v=1719613495&width=700"
+        ],
+        "tags": ["high waist", "strap details", "tapered leg"],
+        "materials": ["Polyester (55%)", "Cotton (45%)"],
+        "releaseDate": "2023-06-28"
+    },
+    {
+        "name": "Sleeveless Modern Cloak \"Yame\"",
+        "category": "outerwear",
+        "subcategory": "vests",
+        "description": "Darkwear Sleeveless Cloak ’Yame’ - TECHWEAR STORM™",
+        "price": 109.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/sleeveless-modern-cloak-yame-m-techwear-storm-652.webp?v=1716672310&width=700",
+            "https://techwearstorm.com/cdn/shop/files/sleeveless-modern-cloak-yame-techwear-storm-344.webp?v=1716672314&width=700"
+        ],
+        "tags": ["armor inspired", "modular", "layering piece"],
+        "materials": ["Polyester (100%)"],
+        "releaseDate": "2023-05-24"
+    },
+    {
+        "name": "Techwear Cargo Pants - Faux Two Piece \"Hirako\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Techwear Cargo Pants - Faux Two Piece ’Hirako’",
+        "price": 149.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/techwear-cargo-pants-faux-two-piece-hirako-storm-689.webp?v=1726378591&width=700",
+            "https://techwearstorm.com/cdn/shop/files/techwear-cargo-pants-faux-two-piece-hirako-storm-703.webp?v=1726378594&width=600"
+        ],
+        "tags": ["illusion design", "utility pockets", "adjustable waist"],
+        "materials": ["Nylon (100%)"],
+        "releaseDate": "2023-09-14"
+    },
+    {
+        "name": "\"Chizuru\" Techwear Hoodie",
+        "category": "tops",
+        "subcategory": "hoodies",
+        "description": "\"Chizuru\" Techwear Hoodie",
+        "price": 99.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/chizuru-techwear-hoodie-storm-701.jpg?v=1737910621&width=700",
+            "https://techwearstorm.com/cdn/shop/files/chizuru-techwear-hoodie-storm-940.webp?v=1737910625&width=700"
+        ],
+        "tags": ["cropped", "oversized hood", "ribbed details"],
+        "materials": ["Cotton (85%)", "Polyester (15%)"],
+        "releaseDate": "2024-01-25"
+    },
+    {
+        "name": "Cyberpunk Poncho \"Aoga\"",
+        "category": "outerwear",
+        "subcategory": "ponchos",
+        "description": "Techwear Poncho \"Aoga\"",
+        "price": 129.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-poncho-aoga-one-size-techwear-storm-888.webp?v=1716669397&width=1000",
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-poncho-aoga-one-size-techwear-storm-897.webp?v=1716669403&width=1000"
+        ],
+        "tags": ["waterproof", "hooded", "reflective details"],
+        "materials": ["PVC-coated polyester (100%)"],
+        "releaseDate": "2023-05-24"
+    },
+    {
+        "name": "Men's Hakama Pants \"Shiryo\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Men's Hakama Pants 'Shiryo' - TECHWEAR STORM™",
+        "price": 119.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/mens-hakama-pants-shiryo-s-techwear-storm-940.webp?v=1725121853&width=700",
+            "https://techwearstorm.com/cdn/shop/files/mens-hakama-pants-shiryo-techwear-storm-370.jpg?v=1718127463&width=700"
+        ],
+        "tags": ["split leg", "high waist", "traditional modern"],
+        "materials": ["Cotton (100%)"],
+        "releaseDate": "2023-08-01"
+    },
+    {
+        "name": "Japanese Hakama Pants \"Awaji\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Pants 'Awaji' - TECHWEAR STORM™",
+        "price": 109.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/japanese-hakama-pants-awaji-techwear-storm-717.webp?v=1716395939&width=700",
+            "https://techwearstorm.com/cdn/shop/files/japanese-hakama-pants-awaji-m-techwear-storm-421.webp?v=1716395942&width=700"
+        ],
+        "tags": ["pleated", "wide leg", "cultural fusion"],
+        "materials": ["Linen (100%)"],
+        "releaseDate": "2023-05-21"
+    },
+    {
+        "name": "\"Roy\" Techwear Hoodie",
+        "category": "tops",
+        "subcategory": "hoodies",
+        "description": "\"Roy\" Techwear Hoodie",
+        "price": 89.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/roy-techwear-hoodie-storm-316.webp?v=1737905870&width=500",
+            "https://techwearstorm.com/cdn/shop/files/roy-techwear-hoodie-storm-903.jpg?v=1737905873&width=700"
+        ],
+        "tags": ["minimalist", "hidden pockets", "thumbholes"],
+        "materials": ["Cotton (90%)", "Spandex (10%)"],
+        "releaseDate": "2024-01-25"
+    },
+    {
+        "name": "Hakama Pants \"Kahama\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Pants 'Kahama' - TECHWEAR STORM™",
+        "price": 119.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/hakama-pants-kahama-one-size-techwear-storm-156.webp?v=1715709404&width=700",
+            "https://techwearstorm.com/cdn/shop/files/hakama-pants-kahama-one-size-techwear-storm-627.webp?v=1715709407&width=700"
+        ],
+        "tags": ["convertible", "adjustable ties", "lightweight"],
+        "materials": ["Linen (70%)", "Cotton (30%)"],
+        "releaseDate": "2023-05-13"
+    },
+    {
+        "name": "Cyberpunk Face Mask \"Obihiro\"",
+        "category": "accessories",
+        "subcategory": "masks",
+        "description": "Cyberpunk Face Mask 'Obihiro' - TECHWEAR STORM™",
+        "price": 29.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-face-mask-obihiro-techwear-storm-997.jpg?v=1719389358&width=700",
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-face-mask-obihiro-techwear-storm-352.webp?v=1719389361&width=700"
+        ],
+        "tags": ["adjustable", "breathable", "LED compatible"],
+        "materials": ["Neoprene (100%)"],
+        "releaseDate": "2023-06-25"
+    },
+    {
+        "name": "Hakama Pants \"Katara\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Pants 'Katara' - TECHWEAR STORM™",
+        "price": 129.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/hakama-pants-katara-techwear-storm-290.webp?v=1715659067&width=700",
+            "https://techwearstorm.com/cdn/shop/files/hakama-pants-katara-m-techwear-storm-853.webp?v=1715660439&width=700"
+        ],
+        "tags": ["reinforced seams", "utility pockets", "modern cut"],
+        "materials": ["Cotton (60%)", "Polyester (40%)"],
+        "releaseDate": "2023-05-12"
+    },
+    {
+        "name": "Samurai Pants \"Kogama\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Hakama Pants 'Kogama' - TECHWEAR STORM™",
+        "price": 139.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/samurai-pants-kogama-one-size-techwear-storm-354.webp?v=1735847198&width=700",
+            "https://techwearstorm.com/cdn/shop/files/samurai-pants-kogama-one-size-techwear-storm-828.jpg?v=1735847201&width=700"
+        ],
+        "tags": ["warrior style", "wide belt loops", "structured fit"],
+        "materials": ["Cotton (55%)", "Linen (45%)"],
+        "releaseDate": "2023-11-02"
+    },
+    {
+        "name": "Techwear Shorts \"Kotetsu\"",
+        "category": "bottoms",
+        "subcategory": "shorts",
+        "description": "Techwear Shorts 'Kotetsu' - STORM™",
+        "price": 69.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/techwear-shorts-kotetsu-storm-742.webp?v=1726379429&width=700",
+            "https://techwearstorm.com/cdn/shop/files/techwear-shorts-kotetsu-storm-275.webp?v=1726379433&width=700"
+        ],
+        "tags": ["biker style", "strap details", "stretch fabric"],
+        "materials": ["Polyester (65%)", "Spandex (35%)"],
+        "releaseDate": "2023-09-14"
+    },
+    {
+        "name": "Techwear Jacket \"Kuma\"",
+        "category": "outerwear",
+        "subcategory": "jackets",
+        "description": "Techwear Jacket 'Kuma' - STORM™",
+        "price": 179.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/techwear-jacket-kuma-s-storm-215.webp?v=1726971420&width=700",
+            "https://techwearstorm.com/cdn/shop/files/techwear-jacket-kuma-storm-264.webp?v=1726971423&width=700"
+        ],
+        "tags": ["waterproof", "multiple zippers", "hidden pockets"],
+        "materials": ["Nylon (100%)"],
+        "releaseDate": "2023-09-21"
+    },
+    {
+        "name": "Techwear Fingerless Gloves \"Hitsuga\"",
+        "category": "accessories",
+        "subcategory": "gloves",
+        "description": "Techwear Mittens 'Hitsuga' - TECHWEAR STORM™",
+        "price": 39.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/techwear-fingerless-gloves-hitsuga-storm-504.jpg?v=1724755484&width=700",
+            "https://techwearstorm.com/cdn/shop/files/techwear-fingerless-gloves-hitsuga-m-storm-937.jpg?v=1724755487&width=700"
+        ],
+        "tags": ["touchscreen compatible", "adjustable straps", "armored look"],
+        "materials": ["Neoprene (80%)", "Polyurethane (20%)"],
+        "releaseDate": "2023-08-26"
+    },
+    {
+        "name": "Techwear Belt \"Nago\"",
+        "category": "accessories",
+        "subcategory": "belts",
+        "description": "Techwear Belt 'Nago' - TECHWEAR STORM™",
+        "price": 49.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/techwear-belt-nago-storm-547.jpg?v=1724841286&width=700",
+            "https://techwearstorm.com/cdn/shop/files/techwear-belt-nago-storm-692.webp?v=1724841289&width=700"
+        ],
+        "tags": ["tactical", "modular", "heavy duty"],
+        "materials": ["Nylon webbing (100%)"],
+        "releaseDate": "2023-08-27"
+    },
+    {
+        "name": "Cyberpunk Cargo Pants \"Nikaho\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Cyberpunk Cargo Pants 'Nikaho' - TECHWEAR STORM™",
+        "price": 129.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-cargo-pants-nikaho-s-techwear-storm-926.webp?v=1716222274&width=700",
+            "https://techwearstorm.com/cdn/shop/files/cyberpunk-cargo-pants-nikaho-techwear-storm-949.webp?v=1716222277&width=700"
+        ],
+        "tags": ["reflective strips", "detachable pouches", "articulated knees"],
+        "materials": ["Cotton (50%)", "Polyester (50%)"],
+        "releaseDate": "2023-05-20"
+    },
+    {
+        "name": "Japanese wide leg pants women \"Suyama\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Japanese wide leg pants women 'Suyama' - TECHWEAR STORM™",
+        "price": 99.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/japanese-wide-leg-pants-women-suyama-one-size-techwear-storm-743.jpg?v=1717133803&width=700",
+            "https://techwearstorm.com/cdn/shop/files/japanese-wide-leg-pants-women-suyama-one-size-techwear-storm-756.jpg?v=1717133806&width=700"
+        ],
+        "tags": ["high waist", "flowing", "cultural design"],
+        "materials": ["Rayon (100%)"],
+        "releaseDate": "2023-05-30"
+    },
+    {
+        "name": "Japanese style pants women's \"Sanmu\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Japanese style pants women's 'Sanmu' - TECHWEAR STORM™",
+        "price": 89.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/japanese-style-pants-womens-sanmu-one-size-techwear-storm-901.jpg?v=1717133106&width=700",
+            "https://techwearstorm.com/cdn/shop/files/japanese-style-pants-womens-sanmu-one-size-techwear-storm-325.jpg?v=1717133109&width=700"
+        ],
+        "tags": ["tapered leg", "hidden pockets", "minimalist"],
+        "materials": ["Cotton (100%)"],
+        "releaseDate": "2023-05-30"
+    },
+    {
+        "name": "Modern Hakama Pants \"Yuhashi\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Modern Hakama Pants 'Yuhashi' - TECHWEAR STORM™",
+        "price": 119.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/modern-hakama-pants-yuhashi-black-s-techwear-storm-153.jpg?v=1717514689&width=700",
+            "https://techwearstorm.com/cdn/shop/files/modern-hakama-pants-yuhashi-techwear-storm-217.webp?v=1717513255&width=700"
+        ],
+        "tags": ["convertible", "adjustable waist", "urban style"],
+        "materials": ["Cotton (70%)", "Polyester (30%)"],
+        "releaseDate": "2023-06-03"
+    },
+    {
+        "name": "Darkwear pants \"Nakama\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Darkwear pants 'Nakama' - TECHWEAR STORM™",
+        "price": 109.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/darkwear-pants-nakama-s-techwear-storm-373.jpg?v=1717519720&width=700",
+            "https://techwearstorm.com/cdn/shop/files/darkwear-pants-nakama-techwear-storm-662.jpg?v=1717518285&width=700"
+        ],
+        "tags": ["jogger style", "elastic cuffs", "minimalist"],
+        "materials": ["Cotton (60%)", "Polyester (40%)"],
+        "releaseDate": "2023-06-03"
+    },
+    {
+        "name": "Modern hakama \"Ukiha\"",
+        "category": "bottoms",
+        "subcategory": "hakama",
+        "description": "Modern hakama 'Ukiha' - TECHWEAR STORM™",
+        "price": 129.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/modern-hakama-ukiha-m-techwear-storm-402.jpg?v=1717677651&width=700",
+            "https://techwearstorm.com/cdn/shop/files/modern-hakama-ukiha-techwear-storm-260.jpg?v=1717676257&width=700"
+        ],
+        "tags": ["asymmetric", "layered", "streetwear"],
+        "materials": ["Linen (100%)"],
+        "releaseDate": "2023-06-06"
+    },
+    {
+        "name": "Black cargo pants \"Annaka\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Black cargo pants 'Annaka' - TECHWEAR STORM™",
+        "price": 119.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/black-cargo-pants-annaka-m-techwear-storm-833.jpg?v=1718446151&width=700",
+            "https://techwearstorm.com/cdn/shop/files/black-cargo-pants-annaka-techwear-storm-334.jpg?v=1718444795&width=700"
+        ],
+        "tags": ["military style", "durable", "multiple pockets"],
+        "materials": ["Cotton (65%)", "Polyester (35%)"],
+        "releaseDate": "2023-06-13"
+    },
+    {
+        "name": "Skull bracelet glove",
+        "category": "accessories",
+        "subcategory": "gloves",
+        "description": "Skull bracelet glove - TECHWEAR STORM™",
+        "price": 49.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/skull-bracelet-glove-one-size-techwear-storm-501.jpg?v=1719365553&width=700",
+            "https://techwearstorm.com/cdn/shop/files/skull-bracelet-glove-one-size-techwear-storm-476.jpg?v=1719365557&width=700"
+        ],
+        "tags": ["gothic", "adjustable", "statement piece"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-06-24"
+    },
+    {
+        "name": "Women Skull bracelet glove",
+        "category": "accessories",
+        "subcategory": "gloves",
+        "description": "Women Skull bracelet glove - TECHWEAR STORM™",
+        "price": 49.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/women-skull-bracelet-glove-one-size-techwear-storm-950.jpg?v=1719387884&width=700",
+            "https://techwearstorm.com/cdn/shop/files/women-skull-bracelet-glove-one-size-techwear-storm-798.jpg?v=1719387888&width=700"
+        ],
+        "tags": ["slim fit", "delicate", "gothic"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-06-25"
+    },
+    {
+        "name": "Black wax coated jeans \"Wasaki\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "Black wax coated jeans 'Wasaki' - TECHWEAR STORM™",
+        "price": 139.99,
+        "stock": 0,
+        "available": false,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/black-wax-coated-jeans-wasaki-s-techwear-storm-486.jpg?v=1724350842&width=700",
+            "https://techwearstorm.com/cdn/shop/files/black-wax-coated-jeans-wasaki-techwear-storm-392.jpg?v=1724348947&width=700"
+        ],
+        "tags": ["water-resistant", "waxed finish", "slim fit"],
+        "materials": ["Cotton (98%)", "Wax coating (2%)"],
+        "releaseDate": "2023-08-21"
+    },
+    {
+        "name": "PU Leather Trousers \"Shihara\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "PU Leather Trousers 'Shihara' - TECHWEAR STORM™",
+        "price": 149.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trousers-shihara-black-xs-techwear-storm-404.webp?v=1724676283&width=700",
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trousers-shihara-techwear-storm-490.webp?v=1724674384&width=700"
+        ],
+        "tags": ["high shine", "skinny fit", "stretch"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-08-25"
+    },
+    {
+        "name": "PU leather trousers \"Miura\"",
+        "category": "bottoms",
+        "subcategory": "pants",
+        "description": "PU leather trousers 'Miura' - TECHWEAR STORM™",
+        "price": 159.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trousers-miura-techwear-storm-996.webp?v=1724780777&width=700",
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trousers-miura-black-s-techwear-storm-985.webp?v=1724782621&width=700"
+        ],
+        "tags": ["moto style", "quilted details", "zipper accents"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-08-27"
+    },
+    {
+        "name": "PU leather trench coat \"Wakima\"",
+        "category": "outerwear",
+        "subcategory": "coats",
+        "description": "PU leather trench coat 'Wakima' - TECHWEAR STORM™",
+        "price": 229.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trench-coat-wakima-s-techwear-storm-384.webp?v=1730423844&width=700",
+            "https://techwearstorm.com/cdn/shop/files/pu-leather-trench-coat-wakima-techwear-storm-707.webp?v=1730423848&width=700"
+        ],
+        "tags": ["longline", "belted", "stand collar"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-09-01"
+    },
+    {
+        "name": "Black faux leather jacket \"Zirushi\"",
+        "category": "outerwear",
+        "subcategory": "jackets",
+        "description": "Black faux leather jacket 'Zirushi' - TECHWEAR STORM™",
+        "price": 189.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/black-faux-leather-jacket-zirushi-m-techwear-storm-605.webp?v=1732070763&width=700",
+            "https://techwearstorm.com/cdn/shop/files/black-faux-leather-jacket-zirushi-techwear-storm-921.webp?v=1732070768&width=700"
+        ],
+        "tags": ["biker style", "asymmetric zip", "quilted lining"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-11-19"
+    },
+    {
+        "name": "Classic Biker Jacket \"Shigara\"",
+        "category": "outerwear",
+        "subcategory": "jackets",
+        "description": "Classic Biker Jacket 'Shigara' - TECHWEAR STORM™",
+        "price": 199.99,
+        "stock": 100,
+        "available": true,
+        "images": [
+            "https://techwearstorm.com/cdn/shop/files/classic-biker-jacket-shigara-xs-techwear-storm-767.webp?v=1732129253&width=700",
+            "https://techwearstorm.com/cdn/shop/files/classic-biker-jacket-shigara-techwear-storm-898.webp?v=1732129258&width=700"
+        ],
+        "tags": ["epaulets", "multiple zippers", "belted waist"],
+        "materials": ["PU Leather (100%)"],
+        "releaseDate": "2023-11-20"
+    }
+]

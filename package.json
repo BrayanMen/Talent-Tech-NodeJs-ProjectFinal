@@ -1,0 +1,30 @@
+{
+  "name": "talent-tech-nodejs-projectfinal",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node --watch index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/BrayanMen/Talent-Tech-NodeJs-ProjectFinal.git"
+  },
+  "keywords": [],
+  "author": "Brayan Mendoza",
+  "license": "ISC",
+  "type": "module",
+  "bugs": {
+    "url": "https://github.com/BrayanMen/Talent-Tech-NodeJs-ProjectFinal/issues"
+  },
+  "homepage": "https://github.com/BrayanMen/Talent-Tech-NodeJs-ProjectFinal#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.2",
+    "body-parser": "^2.2.0",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.0",
+    "express": "^5.1.0",
+    "firebase": "^12.0.0",
+    "jsonwebtoken": "^9.0.2"
+  }
+}
