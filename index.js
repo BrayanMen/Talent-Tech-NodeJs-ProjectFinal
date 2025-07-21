@@ -3,9 +3,11 @@ import server from './src/server.js';
 
 const PORT = configEnv.port;
 const ENV = configEnv.env;
-const ENV_URL = configEnv.workEnviroment
+const ENV_URL = configEnv.workEnviroment;
 server.listen(PORT, () => {
-    console.log(`Servidor funcionando exitosamente en puerto: ${PORT}`);
-    console.log(`Servidor en entorno: ${ENV}`);
-    console.log(`Url del servidor: ${ENV_URL}`);
+    console.log(`
+        Servidor funcionando exitosamente en puerto: ${PORT};
+        Servidor en entorno: ${ENV};
+        Url del servidor: ${ENV_URL};
+        `);
 });

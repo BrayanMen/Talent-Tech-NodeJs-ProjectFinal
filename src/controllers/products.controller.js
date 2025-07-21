@@ -1,5 +1,6 @@
 import {
     createProductService,
+    deleteProductService,
     getAllProductsService,
     getProductsByIdService,
     searchProductsByNameService,
@@ -129,6 +130,32 @@ export const updateProduct = async (req, res) => {
             success: true,
             message: 'Producto modificado con exito',
             data: productUpdate.data,
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Internal server error',
+            message: 'Error al procesar los datos de la solicitud',
+        });
+    }
+};
+
+
+export const deleteProduct = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const deleted = await deleteProductService(id);
+        if (!deleted.success) {
+            return res.status(404).json({
+                success: false,
+                message: deleted.message,
+                error: deleted.error,
+                status: 404,
+            });
+        }
+        res.status(200).json({
+            success: true,
+            message: deleted.message,
+            data: deleted.data,
         });
     } catch (error) {
         res.status(500).json({

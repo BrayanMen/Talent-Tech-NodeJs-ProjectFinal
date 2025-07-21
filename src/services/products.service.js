@@ -1,5 +1,6 @@
 import {
     createProductsDB,
+    deleteProductDB,
     getAllProductsDB,
     getProductsByIdDB,
     searchProductsByNameDB,
@@ -120,26 +121,50 @@ export const searchProductsByNameService = async name => {
     }
 };
 
-export const updateProductService = async (id, productData)=>{
+export const updateProductService = async (id, productData) => {
     try {
         if (!id) {
-           return {
-               success: false,
-               error: 'ID requerido',
-               message: 'Debe proporcionar un ID valido',
-           };
-       }
-        const updated = await updateProductDB(id,productData)
-        return{
-            success:true,
-            message:'Producto modificado',
-            data: updated
+            return {
+                success: false,
+                error: 'ID requerido',
+                message: 'Debe proporcionar un ID valido',
+            };
         }
+        const updated = await updateProductDB(id, productData);
+        return {
+            success: true,
+            message: 'Producto modificado',
+            data: updated,
+        };
     } catch (error) {
         return {
             success: false,
-            message: 'Error al modificar',
+            message: 'Error al modificar el producto',
             error: error.message,
         };
     }
-}
+};
+
+export const deleteProductService = async id => {
+    try {
+        if (!id) {
+            return {
+                success: false,
+                error: 'ID requerido',
+                message: 'Debe proporcionar un ID valido',
+            };
+        }
+        const productDelete = await deleteProductDB(id);
+        return {
+            success: true,
+            message: 'Producto Eliminado',
+            data: productDelete.message,
+        };
+    } catch (error) {
+        return {
+            success: false,
+            message: 'Error al eliminar el producto',
+            error: error.message,
+        };
+    }
+};

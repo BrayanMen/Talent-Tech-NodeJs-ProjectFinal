@@ -32,9 +32,11 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
 
 **`products.routes.js`**
 
-- [X] `GET /api/products` → Lista todos los productos.
-- [X] `GET /api/products/:id` → Producto por ID.
+- [X] `GET /api/products` → Obtener todos los productos.
+- [X] `GET /api/products/:id` → Obtener Producto por ID.
+- [X] `GET /api/search?name=xxxx` → Buscar Producto por nombre.
 - [X] `POST /api/products/create` → Crear producto.
+- [X] `PUT /api/products/:ID` → Modificar producto.
 - [X] `DELETE /api/products/:id` → Eliminar producto.
 
 **`auth.routes.js`**
