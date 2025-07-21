@@ -3,6 +3,7 @@ import {
     getAllProductsDB,
     getProductsByIdDB,
     searchProductsByNameDB,
+    updateProductDB,
 } from '../models/products.model.js';
 
 export const getAllProductsService = async (querys = {}) => {
@@ -118,3 +119,27 @@ export const searchProductsByNameService = async name => {
         };
     }
 };
+
+export const updateProductService = async (id, productData)=>{
+    try {
+        if (!id) {
+           return {
+               success: false,
+               error: 'ID requerido',
+               message: 'Debe proporcionar un ID valido',
+           };
+       }
+        const updated = await updateProductDB(id,productData)
+        return{
+            success:true,
+            message:'Producto modificado',
+            data: updated
+        }
+    } catch (error) {
+        return {
+            success: false,
+            message: 'Error al modificar',
+            error: error.message,
+        };
+    }
+}

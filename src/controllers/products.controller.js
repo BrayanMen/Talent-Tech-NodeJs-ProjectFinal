@@ -3,6 +3,7 @@ import {
     getAllProductsService,
     getProductsByIdService,
     searchProductsByNameService,
+    updateProductService,
 } from '../services/products.service.js';
 
 export const getAllProducts = async (req, res) => {
@@ -70,7 +71,7 @@ export const searchProductsByName = async (req, res) => {
         if (!name) {
             return res.status(404).json({
                 success: false,
-                message: 'Error al pasar el parametro "name"',               
+                message: 'Error al pasar el parametro "name"',
             });
         }
         const search = await searchProductsByNameService(name);
@@ -104,6 +105,30 @@ export const createProduct = async (req, res) => {
             success: true,
             message: newProduct.message,
             data: newProduct.data,
+        });
+    } catch (error) {
+        res.status(500).json({
+            error: 'Internal server error',
+            message: 'Error al procesar los datos de la solicitud',
+        });
+    }
+};
+
+export const updateProduct = async (req, res) => {
+    try {
+        const { id } = req.params;
+        const dataProduct = req.body;
+        const productUpdate = await updateProductService(id, dataProduct);
+        if (!productUpdate.success)
+            return res.status(404).json({
+                success: false,
+                message: productUpdate.message,
+                error: productUpdate.error,
+            });
+        res.status(200).json({
+            success: true,
+            message: 'Producto modificado con exito',
+            data: productUpdate.data,
         });
     } catch (error) {
         res.status(500).json({

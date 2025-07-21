@@ -74,10 +74,17 @@ export const getProductsByIdDB = async id => {
         if (!snapshot.exists()) {
             throw new Error(`Productos de ID: ${id} inexistente`);
         }
+        const data = snapshot.data();
         return {
             product: {
                 id: snapshot.id,
-                ...snapshot.data(),
+                ...data,
+                releaseDate: data.releaseDate?.seconds
+                    ? new Date(data.releaseDate.seconds * 1000).toISOString()
+                    : null,
+                updatedAt: data.updatedAt?.seconds
+                    ? new Date(data.updatedAt.seconds * 1000).toISOString()
+                    : null,
             },
         };
     } catch (error) {
