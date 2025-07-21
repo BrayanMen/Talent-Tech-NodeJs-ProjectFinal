@@ -70,7 +70,7 @@ export const searchProductsByName = async (req, res) => {
         if (!name) {
             return res.status(404).json({
                 success: false,
-                message: 'Error al pasar el parametro "name"',
+                message: 'Error al pasar el parametro "name"',               
             });
         }
         const search = await searchProductsByNameService(name);

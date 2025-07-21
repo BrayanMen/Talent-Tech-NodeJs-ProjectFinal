@@ -2,7 +2,7 @@ import {
     createProductsDB,
     getAllProductsDB,
     getProductsByIdDB,
-    searchProductsByName,
+    searchProductsByNameDB,
 } from '../models/products.model.js';
 
 export const getAllProductsService = async (querys = {}) => {
@@ -104,7 +104,7 @@ export const createProductService = async productData => {
 
 export const searchProductsByNameService = async name => {
     try {
-        const search = await searchProductsByName(name);
+        const search = await searchProductsByNameDB(name);
         return {
             success: true,
             message: 'Producto encontrado',

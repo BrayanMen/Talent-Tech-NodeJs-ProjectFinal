@@ -86,7 +86,7 @@ export const getProductsByIdDB = async id => {
     }
 };
 
-export const searchProductsByName = async name => {
+export const searchProductsByNameDB = async name => {
     try {
         const lowerName = name.toLowerCase();
         const queryName = query(
@@ -116,13 +116,15 @@ export const createProductsDB = async productData => {
         const newProduct = {
             ...productData,
             lowerName: productData.name.toLowerCase(),
-            releaseDate: productData.releaseDate
-                ? Timestamp.fromDate(new Date(productData.releaseDate))
-                : null,
+            releaseDate: Timestamp.now(),
         };
 
-        const addProducts = await addDoc(productsCollection, newProduct);
-        return { id: addProducts.id, ...newProduct };
+        const cleanData = Object.fromEntries(
+            Object.entries(newProduct).filter(([_, v]) => v !== undefined)
+        );
+
+        const addProducts = await addDoc(productsCollection, cleanData);
+        return { id: addProducts.id, ...cleanData };
     } catch (error) {
         console.error('Error al crear el producto: ', error);
         throw new Error('Error al crear el producto en la DB');
