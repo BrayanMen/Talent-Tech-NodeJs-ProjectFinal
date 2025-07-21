@@ -6,7 +6,9 @@ export const notFound = (req, res, next) => {
       'GET /',
       'GET /api/products',
       'GET /api/products/:id',
+      'GET /api/products/search?name=xxxx',
       'POST /api/products/create',
+      'PUT /api/products/:id',
       'DELETE /api/products/:id',
       'POST /auth/login'
     ]
