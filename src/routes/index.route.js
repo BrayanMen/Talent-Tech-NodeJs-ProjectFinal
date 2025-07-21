@@ -12,7 +12,8 @@ router.get('/', (req, res) => {
     version: '1.0.0',
     endpoints: {
       products: '/api/products',
-      auth: '/auth/login'
+      users: '/api/users',
+      auth: '/auth/login || register'
     }
   });
 });
