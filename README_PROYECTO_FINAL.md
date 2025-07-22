@@ -23,7 +23,7 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
 - [X] Crear app con Express.
 - [X] Configurar CORS para permitir requests del frontend.
 - [X] Usar `body-parser.json()` para parsear JSON.
-- [ ] Crear middleware para rutas no definidas (Error 404).
+- [X] Crear middleware para rutas no definidas (Error 404).
 - [X] Crear archivo `.env` con las variables de entorno necesarias (como las de Firebase, puerto, JWT secret, etc).
 
 ## 🚦 4. Rutas
