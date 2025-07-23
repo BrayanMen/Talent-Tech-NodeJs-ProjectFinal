@@ -1,5 +1,14 @@
 import { db } from '../config/firebase.config.js';
-import { collection, doc, getDoc, getDocs, query, where } from 'firebase/firestore';
+import {
+    collection,
+    doc,
+    getDoc,
+    getDocs,
+    query,
+    setDoc,
+    Timestamp,
+    where,
+} from 'firebase/firestore';
 
 const COLLECTION_NAME = 'users';
 const usersCollection = collection(db, COLLECTION_NAME);
@@ -48,5 +57,26 @@ export const getUserByEmailDB = async email => {
     } catch (error) {
         console.error('Error al capturar producto por email: ', error);
         throw new Error('Error al traer el producto de la Base de Datos');
+    }
+};
+
+export const createUserDB = async userData => {
+    try {
+        if (!userData.email || !userData.password) {
+            throw new Error('Los campos de correo y contraseña son obligatorios');
+        }
+        const userRef = doc(usersCollection);
+        await setDoc(userRef, {
+            ...userData,
+            createdAt: Timestamp.now(),
+            updatedAt: Timestamp.now(),
+        });
+        return {
+            id: userRef.id,
+            ...userData,
+        };
+    } catch (error) {
+        console.error('Error al crear el usuario: ', error);
+        throw new Error('Error al crear el usuario en la DB');
     }
 };
