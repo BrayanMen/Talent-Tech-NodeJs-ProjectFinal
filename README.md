@@ -19,8 +19,8 @@ Una API RESTful desarrollada para administrar productos y usuarios de forma segu
 ## Instalación
 
 ```bash
-git clone https://github.com/tuusuario/proyecto-final-techlab.git
-cd proyecto-final-techlab
+git clone https://github.com/BrayanMen/Talent-Tech-NodeJs-ProjectFinal.git
+cd Talent-Tech-NodeJs-ProjectFinal
 npm install
 ```
 
@@ -34,10 +34,6 @@ PORT=8080
 
 JWT_SECRET=secreto
 
-NODE_ENV=development
-
-DEV_URL=http://localhost:8080
-PROD_URL=''
 
 FIREBASE_API_KEY=xxxxx
 FIREBASE_AUTH_DOMAIN=xxxxxx
@@ -54,7 +50,7 @@ MEASUREMENT_ID=xxxxxxx
 npm run start
 ```
 
-Servidor disponible en: `http://localhost:3001`
+Servidor disponible en: `[http://localhost:8080](https://talentotechnodejs.vercel.app/)`
 
 ## Pruebas con Postman
 
