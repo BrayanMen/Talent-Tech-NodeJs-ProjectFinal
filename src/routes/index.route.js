@@ -1,9 +1,11 @@
 import { Router } from 'express';
 import routesProducts from './products.route.js'
+import routesUsers from './users.route.js'
 
 const router = Router();
 
 router.use('/api/products', routesProducts)
+router.use('/api/users', routesUsers)
 
 
 router.get('/', (req, res) => {

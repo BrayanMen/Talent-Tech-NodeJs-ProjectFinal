@@ -19,7 +19,7 @@ export const getAllProductsService = async (querys = {}) => {
     } catch (error) {
         return {
             success: false,
-            message: 'Error al obtener productos ',
+            message: 'Error al obtener los productos',
             error: error.message,
         };
     }

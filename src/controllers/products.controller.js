@@ -31,11 +31,11 @@ export const getAllProducts = async (req, res) => {
             message: products.message,
             data: products.data,
             count: products.data.length,
-            nextPage: products.nextPage,
+            lastProduct: products.nextPage,
         });
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }
@@ -60,7 +60,7 @@ export const getProductById = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }
@@ -85,7 +85,7 @@ export const searchProductsByName = async (req, res) => {
         res.status(200).json(search.data);
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }
@@ -109,7 +109,7 @@ export const createProduct = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }
@@ -133,12 +133,11 @@ export const updateProduct = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }
 };
-
 
 export const deleteProduct = async (req, res) => {
     try {
@@ -159,7 +158,7 @@ export const deleteProduct = async (req, res) => {
         });
     } catch (error) {
         res.status(500).json({
-            error: 'Internal server error',
+            error: error,
             message: 'Error al procesar los datos de la solicitud',
         });
     }

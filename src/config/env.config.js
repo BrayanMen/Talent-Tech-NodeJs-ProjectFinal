@@ -4,7 +4,7 @@ dotenv.config();
 const configEnv = {
     port: process.env.PORT || 8080,
     env: process.env.NODE_ENV,
-    jwt: process.env.JWT_SECRET,
+    jwtoken: process.env.JWT_SECRET,
     firebase: {
         apiKey: process.env.FIREBASE_API_KEY,
         authDomain: process.env.FIREBASE_AUTH_DOMAIN,
