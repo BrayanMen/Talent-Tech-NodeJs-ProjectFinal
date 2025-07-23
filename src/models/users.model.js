@@ -1,12 +1,16 @@
 import { db } from '../config/firebase.config.js';
 import {
+    arrayRemove,
+    arrayUnion,
     collection,
+    deleteDoc,
     doc,
     getDoc,
     getDocs,
     query,
     setDoc,
     Timestamp,
+    updateDoc,
     where,
 } from 'firebase/firestore';
 
@@ -24,6 +28,9 @@ export const getAllUsersDB = async () => {
                 createdAt: data.createdAt?.seconds
                     ? new Date(data.createdAt.seconds * 1000).toISOString()
                     : null,
+                updatedAt: data.updatedAt?.seconds
+                    ? new Date(data.updatedAt.seconds * 1000).toISOString()
+                    : null,
             };
         });
         return {
@@ -39,20 +46,22 @@ export const getAllUsersDB = async () => {
 export const getUserByEmailDB = async email => {
     try {
         const queryEmail = query(usersCollection, where('email', '==', email));
-        const snapshot = await getDoc(queryEmail);
-        if (!snapshot.exists()) throw new Error(`El usuario del email: ${email} no existe`);
-        const data = snapshot.data();
+        const snapshot = await getDocs(queryEmail);
+
+        if (snapshot.empty) return null;
+
+        const doc = snapshot.docs[0];
+        const data = doc.data();
+
         return {
-            user: {
-                id: snapshot.id,
-                ...data,
-                createdAt: data.createdAt?.seconds
-                    ? new Date(data.createdAt.seconds * 1000).toISOString()
-                    : null,
-                updatedAt: data.updatedAt?.seconds
-                    ? new Date(data.updatedAt.seconds * 1000).toISOString()
-                    : null,
-            },
+            id: doc.id,
+            ...data,
+            createdAt: data.createdAt?.seconds
+                ? new Date(data.createdAt.seconds * 1000).toISOString()
+                : null,
+            updatedAt: data.updatedAt?.seconds
+                ? new Date(data.updatedAt.seconds * 1000).toISOString()
+                : null,
         };
     } catch (error) {
         console.error('Error al capturar producto por email: ', error);
@@ -78,5 +87,98 @@ export const createUserDB = async userData => {
     } catch (error) {
         console.error('Error al crear el usuario: ', error);
         throw new Error('Error al crear el usuario en la DB');
+    }
+};
+
+export const getUserByIdDB = async id => {
+    try {
+        const docID = doc(db, COLLECTION_NAME, id);
+        const snapshot = await getDoc(docID);
+        if (!snapshot.exists()) {
+            throw new Error(`El usuario de ID: ${id} no existe`);
+        }
+        const data = snapshot.data();
+        return {
+            id: id,
+            ...data,
+            createdAt: data.createdAt?.seconds
+                ? new Date(data.createdAt.seconds * 1000).toISOString()
+                : null,
+            updatedAt: data.updatedAt?.seconds
+                ? new Date(data.updatedAt.seconds * 1000).toISOString()
+                : null,
+        };
+    } catch (error) {
+        console.error('Error al capturar usuario por id: ', error);
+        throw new Error('Error al traer el usuario de la Base de Datos');
+    }
+};
+
+export const updateUserDB = async (id, userData) => {
+    try {
+        const docID = doc(db, COLLECTION_NAME, id);
+        const snapshot = await getDoc(docID);
+
+        if (!snapshot.exists()) {
+            throw new Error(`El usuario de ID: ${id} no existe`);
+        }
+
+        const updateUser = {
+            ...userData,
+            updatedAt: Timestamp.now(),
+        };
+        await updateDoc(docID, updateUser);
+        return {
+            id: id,
+            ...snapshot.data(),
+            ...updateUser,
+        };
+    } catch (error) {
+        console.error('Error al actualizar el usuario: ', error);
+        throw new Error('Error al actualizar el usuario en la DB');
+    }
+};
+
+export const deleteUserDB = async id => {
+    try {
+        const docID = doc(db, COLLECTION_NAME, id);
+        const snapshot = await getDoc(docID);
+
+        if (!snapshot.exists()) {
+            throw new Error(`El usuario de ID: ${id} no existe`);
+        }
+
+        await deleteDoc(docID);
+        return {
+            message: `Usuario de ID: ${id} eliminado con exito`,
+        };
+    } catch (error) {
+        console.error('Error al eliminar el Usuario: ', error);
+        throw new Error('Error al eliminar el usuario en la DB');
+    }
+};
+
+export const updateWishlistDB = async (userId, productId, action) => {
+    try {
+        const userReF = doc(db, COLLECTION_NAME, userId);
+        if (action === 'add') {
+            await updateDoc(userReF, {
+                wishlist: arrayUnion(productId),
+            });
+        }else if(action=== 'remove'){
+            await updateDoc(userReF,{
+                wishlist: arrayRemove(productId)
+            })
+        }else{
+            throw new Error('Accion invalida en el lista de favoritos')
+        }
+        const updatedDoc = await getDoc(userReF);
+        return{
+            message: 'Favoritos Actualizados',
+            data: updatedDoc.data().wishlist || [],
+        }
+    } catch (error) {
+        console.error('Error al actualizar favoritos:', error);
+        throw new Error('Error al actualizar favoritos');
     }
 };

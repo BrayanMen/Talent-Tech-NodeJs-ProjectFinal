@@ -1,7 +1,7 @@
 import bcrypt from 'bcryptjs';
+import configEnv from '../config/env.config.js';
+import { createUserDB, getUserByEmailDB } from '../models/users.model.js';
 import jwt from 'jsonwebtoken';
-import configEnv from '../config/env.config';
-import { createUserDB, getUserByEmailDB } from '../models/users.model';
 
 const JWT_SECRET = configEnv.jwtoken;
 const SALT = 12;
@@ -9,8 +9,9 @@ const SALT = 12;
 export const registerUserService = async userData => {
     try {
         const userExist = await getUserByEmailDB(userData.email);
-        if (userExist) throw new Error('El correo ya esta registrado.');
-
+        if (userExist) {
+            throw new Error('El correo ya esta registrado.');
+        }
         const hashedPassword = await bcrypt.hash(userData.password, SALT);
 
         const newUser = await createUserDB({
@@ -30,12 +31,12 @@ export const registerUserService = async userData => {
             },
             wishlist: [],
         });
+
         const { password: _, ...userClean } = newUser;
         return {
             success: true,
-            token,
             message: 'Usuario registrado con Exitoso',
-            user: { userClean },
+            userClean,
         };
     } catch (error) {
         return {
@@ -51,12 +52,12 @@ export const loginUserService = async (email, password) => {
         const user = await getUserByEmailDB(email);
         if (!user) throw new Error('El correo es incorrecto');
 
-        const passwordValid = await bcrypt.compare(password, email.password);
+        const passwordValid = await bcrypt.compare(password, user.password);
         if (!passwordValid) throw new Error('Contraseña incorrecta');
 
         const token = jwt.sign(
             {
-                id: user.uid,
+                id: user.id,
                 email: user.email,
                 role: user.role,
                 name: user.name,
@@ -67,9 +68,9 @@ export const loginUserService = async (email, password) => {
         const { password: _, ...userClean } = user;
         return {
             success: true,
-            token,
             message: 'Inicio de Sesion Exitoso',
-            user: { userClean },
+            userClean,
+            token,
         };
     } catch (error) {
         return {

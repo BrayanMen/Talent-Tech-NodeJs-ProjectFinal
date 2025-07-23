@@ -1,6 +1,6 @@
-# 🛠️ Proyecto Final - API REST de Productos
+# Proyecto Final - API REST de Productos
 
-## 📁 1. Configuración Inicial
+## 1. Configuración Inicial
 
 - [X] Crear el directorio del proyecto.
 - [X] Crear `index.js` como punto de entrada.
@@ -8,7 +8,7 @@
 - [X] Agregar `"type": "module"` en `package.json`.
 - [X] Configurar script `"start": "node index.js"` en `package.json`.
 
-## 📦 2. Instalación de Dependencias
+## 2. Instalación de Dependencias
 
 Instalar:
 
@@ -18,7 +18,7 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
 
 - [X] Confirmar que todas las dependencias están en `package.json`.
 
-## 🌐 3. Configuración del Servidor (en `index.js`)
+## 3. Configuración del Servidor (en `index.js`)
 
 - [X] Crear app con Express.
 - [X] Configurar CORS para permitir requests del frontend.
@@ -26,29 +26,39 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
 - [X] Crear middleware para rutas no definidas (Error 404).
 - [X] Crear archivo `.env` con las variables de entorno necesarias (como las de Firebase, puerto, JWT secret, etc).
 
-## 🚦 4. Rutas
+## 4. Rutas
 
-- [X] Crear carpeta `routes/`.
+* [X] Crear carpeta `routes/`.
 
-**`products.routes.js`**
+### ✅ `products.routes.js`
 
-- [X] `GET /api/products` → Obtener todos los productos.
-- [X] `GET /api/products/:id` → Obtener Producto por ID.
-- [X] `GET /api/search?name=xxxx` → Buscar Producto por nombre.
-- [X] `POST /api/products/create` → Crear producto.
-- [X] `PUT /api/products/:ID` → Modificar producto.
-- [X] `DELETE /api/products/:id` → Eliminar producto.
+* [X] `GET /api/products` → Obtener todos los productos.
+* [X] `GET /api/products/:id` → Obtener producto por ID.
+* [X] `GET /api/products/search?name=xxx` → Buscar producto por nombre.
+* [X] `POST /api/products/create` → Crear producto (requiere token de admin).
+* [X] `PUT /api/products/:id` → Modificar producto (requiere token de admin).
+* [X] `DELETE /api/products/:id` → Eliminar producto (requiere token de admin).
 
-**`auth.routes.js`**
+### ✅ `auth.routes.js`
 
-- [ ] `POST /auth/login` → Devuelve token si credenciales válidas.
+* [X] `POST /auth/login` → Devuelve token si credenciales válidas.
+* [X] `POST /auth/register` → Registra un nuevo usuario.
 
-## 🧠 5. Controladores y Servicios
+### ✅ `users.routes.js`
+
+* [X] `GET /api/users` → Listar todos los usuarios (admin).
+* [X] `GET /api/users/profile` → Perfil del usuario autenticado.
+* [X] `GET /api/users/profile/update` → Actualizar perfil del usuario.
+* [X] `DELETE /api/users/profile` → Eliminar cuenta del usuario.
+* [X] `PATCH /api/users/change-password` → Cambiar contraseña.
+* [X] `PATCH /api/users/wishlist` → Agregar/quitar producto de favoritos.
+
+## 5. Controladores y Servicios
 
 - [X] Crear carpeta `controllers/` con lógicas para cada endpoint.
 - [X] Crear carpeta `services/` que maneje la lógica de negocio y use los modelos.
 
-## 🗄️ 6. Modelos y Acceso a Firebase
+## 6. Modelos y Acceso a Firebase
 
 - [X] Crear carpeta `models/`.
 - [X] Crear proyecto en Firebase.
@@ -57,15 +67,16 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
 - [X] Implementar métodos CRUD en los modelos usando la API de Firebase.
 - [X] Conectar servicios con los modelos.
 
-## 🔐 7. Autenticación y Seguridad
+## 7. Autenticación y Seguridad
 
-- [X] Instalar y configurar JWT.
-- [ ] Crear middleware `authMiddleware.js` para proteger rutas privadas.
-- [ ] Validar credenciales en el login (puede ser hardcodeado o traído de Firebase).
-- [ ] Generar y devolver Bearer Token si credenciales son válidas.
-- [ ] Aplicar middleware de autenticación a rutas protegidas (crear, eliminar, etc.).
+* [X] Instalar y configurar JWT.
+* [X] Crear middleware `authenticate` para validar token.
+* [X] Crear middleware `authRole` para validar roles.
+* [X] Validar credenciales desde Firestore en el login.
+* [X] Generar y devolver Bearer Token si credenciales válidas.
+* [X] Aplicar autenticación y roles en rutas protegidas (`create`, `delete`, `update`).
 
-## ❌ 8. Manejo de Errores
+## 8. Manejo de Errores
 
 - [X] Usar `try-catch` en controladores y servicios.
 - [X] Enviar códigos de estado correctos:
@@ -75,20 +86,25 @@ npm install express cors body-parser dotenv firebase jsonwebtoken
   - `404` → Recurso no encontrado.
   - `500` → Error interno del servidor o fallo con Firebase.
 
-## 📤 9. Despliegue (si aplica)
+## 9. Despliegue (si aplica)
 
 - [X] Asegurarte de no subir el archivo `.env` (agregar a `.gitignore`).
 - [X] Verificar funcionamiento local de todos los endpoints.
-- [ ] Documentar las rutas disponibles y requerimientos de cada una.
+- [X] Documentar las rutas disponibles y requerimientos de cada una.
 
----
+## Bonus: Testing Manual
 
-## 🧪 Bonus: Checklist de testing manual
-
-| Endpoint                 | Método | Token necesario | Estado esperado       |
-| ------------------------ | ------- | --------------- | --------------------- |
-| `/api/products`        | GET     | ✅              | 200 + array productos |
-| `/api/products/:id`    | GET     | ✅              | 200 o 404             |
-| `/api/products/create` | POST    | ✅              | 201 o 400             |
-| `/api/products/:id`    | DELETE  | ✅              | 200 o 404             |
-| `/auth/login`          | POST    | ❌              | 200 + token o 401     |
+| Endpoint                       | Método | Requiere Token | Estado Esperado   |
+| ------------------------------ | ------- | -------------- | ----------------- |
+| `/api/products`              | GET     | ✅             | 200 + productos   |
+| `/api/products/:id`          | GET     | ✅             | 200 o 404         |
+| `/api/products/search?name`  | GET     | ✅             | 200               |
+| `/api/products/create`       | POST    | ✅ (admin)     | 201 o 400         |
+| `/api/products/:id`          | PUT     | ✅ (admin)     | 200 o 400/404     |
+| `/api/products/:id`          | DELETE  | ✅ (admin)     | 200 o 404         |
+| `/auth/login`                | POST    | ✅             | 200 + token o 401 |
+| `/auth/register`             | POST    | ✅             | 201 o 400         |
+| `/api/users/profile`         | GET     | ✅             | 200 o 401         |
+| `/api/users/change-password` | PATCH   | ✅             | 200 o 400         |
+| `/api/users/wishlist`        | PATCH   | ✅             | 200 o 400         |
+| `/api/users`                 | GET     | ✅ (admin)     | 200 o 403         |

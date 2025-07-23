@@ -72,7 +72,7 @@ export const getProductsByIdDB = async id => {
         const snapshot = await getDoc(docID);
 
         if (!snapshot.exists()) {
-            throw new Error(`Productos de ID: ${id} inexistente`);
+            throw new Error(`Productos de ID: ${id} no existe`);
         }
         const data = snapshot.data();
         return {
@@ -143,12 +143,14 @@ export const updateProductDB = async (id, productData) => {
         const productRef = doc(db, COLLECTION_NAME, id);
         const snapshot = await getDoc(productRef);
 
-        if (!snapshot.exists()) return null;
+        if (!snapshot.exists()) {
+            throw new Error(`El producto de ID: ${id} no existe`);
+        }
 
         const updateProduct = {
             ...productData,
             lowerName: productData.name.toLowerCase(),
-            updatedAt: new Date(),
+            updatedAt: Timestamp.now(),
         };
         await updateDoc(productRef, updateProduct);
         return {

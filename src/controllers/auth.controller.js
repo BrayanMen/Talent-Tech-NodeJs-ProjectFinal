@@ -1,9 +1,9 @@
-import { loginUserService, registerUserService } from '../services/auth.service';
+import { loginUserService, registerUserService } from '../services/auth.service.js';
 
 export const register = async (req, res) => {
     try {
-        const userData = req.body;
-        const newUser = await registerUserService(userData);
+        const user = req.body;
+        const newUser = await registerUserService(user);
         if (!newUser) {
             return res.status(400).json({
                 success: false,
@@ -14,7 +14,7 @@ export const register = async (req, res) => {
         res.status(201).json({
             success: true,
             message: newUser.message,
-            data: newUser.user
+            data: newUser.userClean,
         });
     } catch (error) {
         res.status(500).json({
@@ -28,17 +28,17 @@ export const login = async (req, res) => {
     try {
         const { password, email } = req.body;
         const login = await loginUserService(email, password);
-        if (!login) {
+        if (!login.success) {
             return res.status(401).json({
                 success: false,
                 message: login.message,
                 error: login.error,
-                status: 404,
             });
         }
         res.status(200).json({
             success: true,
-            data: { user: login.user, token: login.token },
+            data: login.userClean,
+            token: login.token,
         });
     } catch (error) {
         res.status(500).json({
