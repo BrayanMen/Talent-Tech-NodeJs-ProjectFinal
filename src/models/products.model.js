@@ -21,7 +21,7 @@ const COLLECTION_NAME = 'products';
 const productsCollection = collection(db, COLLECTION_NAME);
 
 export const getAllProductsDB = async queryParams => {
-    const { limitDoc = 10, startDocID, category, available, minPrice, maxPrice } = queryParams;
+    const { limitDoc, startDocID, category, available, minPrice, maxPrice } = queryParams;
     try {
         const filters = [];
         if (category) filters.push(where('category', '==', category));
