@@ -13,7 +13,7 @@ const router = Router();
 
 router.get('/', authenticate, authRole(['admin']), getAllUsers);
 router.get('/profile', authenticate, getProfileUser);
-router.get('/profile/update', authenticate, updateUser);
+router.put('/profile/update', authenticate, updateUser);
 router.delete('/profile', authenticate, deleteProfile);
 router.patch('/change-password', authenticate, changePassword);
 router.patch('/wishlist', authenticate, updateWishlist);
