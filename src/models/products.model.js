@@ -26,8 +26,8 @@ export const getAllProductsDB = async queryParams => {
         const filters = [];
         if (category) filters.push(where('category', '==', category));
         if (available !== null) filters.push(where('available', '==', available));
-        if (minPrice !== null) filters.push(where('minPrice', '>=', minPrice));
-        if (maxPrice !== null) filters.push(where('maxPrice', '<=', maxPrice));
+        if (minPrice !== null) filters.push(where('price', '>=', minPrice));
+        if (maxPrice !== null) filters.push(where('price', '<=', maxPrice));
 
         let lastDoc = null;
         if (startDocID) {
