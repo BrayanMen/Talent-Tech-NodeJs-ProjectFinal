@@ -15,7 +15,7 @@ export const getAllProducts = async (req, res) => {
             available: available === 'true' ? true : available === 'false' ? false : null,
             minPrice: minPrice ? Number(minPrice) : null,
             maxPrice: maxPrice ? Number(maxPrice) : null,
-            limitDoc: limitDoc ? parseInt(limitDoc) : 10,
+            limitDoc: limitDoc ? parseInt(limitDoc) : null,
             startDocID: startDocID || null,
         });
         if (!products.success) {
